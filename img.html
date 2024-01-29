@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Tutorial</title>
+
+<link rel="stylesheet" type="text/css" href="pc.css">
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+      /* @import url('https://fonts.googleapis.com/css?family=Poppins: wght@100; 200; 300'); */
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+
+}
+
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+ 
+  /* Mobile Menu  */
+  
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .toggle {
+    order: 1;
+  }
+  
+  .item.button {
+    order: 2;
+  }
+  
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  
+  .item.active {
+    display: block;
+  }
+  
+  /* Tablet Menu  */
+  
+  @media all and (min-width: 468px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+  
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+  
+    .toggle {
+      order: 2;
+    }
+  
+    .button.secondary {
+      border: 0;
+    }
+  
+    .button a {
+      text-decoration: none;
+     
+      
+    }
+  
+    .button.secondary a {
+      background: transparent;
+    }
+  
+    .button a:hover {
+      transition: all 0.25s;
+    }
+    .button:not(.secondary) a:hover {
+     color: #ddd;
+      
+    }
+  
+    .button.secondary a:hover {
+      color: #ddd;
+    }
+  }
+  
+  @media all and (min-width: 768px) {
+    .item {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+    }
+    .button {
+      order: 2px;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.button {
+      padding-right: 0;
+    }
+  }
+  
+
+
+
+
+  
+.footer{
+  margin-top: 80px;
+  background-color: black;
+}
+
+.foot{
+  padding: 20px 0;
+}
+
+.footer-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
+}
+
+.footlinks h4{
+  margin-top: 25px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 10px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+
+
+.social{
+  margin-top: 20px;
+}
+.social a{
+  font-size: 25px;
+  margin: 6px;
+  height: 40px;
+  width: 40px;
+  color: black;
+  background-color: white;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  transition: ease 0.30s;
+}
+
+.social a:hover{
+  transform: scale(1.2);
+}
+
+.end{
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 12px;
+}
+
+.end p{
+  font-size: 15px;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+
+
+
+.container{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+margin: 40px 20px 0 20px;
+
+ }
+
+.container .heading{ 
+    padding-bottom: 50px;
+width: 50%;
+ }
+
+.container .heading h3{
+
+font-size: 3em;
+font-weight: bolder;
+padding-bottom: 10px;
+border-bottom: 3px solid #222;
+}
+.container .heading h3 span{
+
+font-weight: 100;
+}
+
+    .container .box{
+    
+    display: flex;
+    flex-direction: row;
+     justify-content: space-between;
+    
+    align-items: center;
+    }
+    
+    .container .box .dream{
+     flex-direction: column; 
+    display: flex;
+    width: 32.5%;
+    }
+
+    .container .box .dream img{
+        width: 100%;
+        padding-bottom: 15px;
+        border-radius: 5px;
+    }
+    .container .btn{
+
+        margin: 40px 0 70px 0;
+        
+        background: #222;
+        
+        padding: 15px 40px;
+        
+        border-radius: 5px;
+         }
+        
+        .container .btn a{
+        color: #fff;
+        
+        font-size: 1.2em;
+         text-decoration: none;
+        
+        font-weight: bolder;
+         }
+
+         @media only screen and (max-width: 769px){
+
+            .container.box{
+           
+           flex-direction: column;
+           
+           }
+            .container .box .dream{
+           
+           width: 100%;
+           
+            }
+           }
+
+           @media only screen and (max-width: 643px){
+
+            .container.heading{
+           
+           width: 100%;
+           
+           }
+            .container .heading h3{
+           
+           font-size: 1em;
+           
+            }}
+    </style>
+  </head>
+  <body>
+   
+    <main>
+      <a href="https://github.com/replyre" style="position: fixed; bottom: 0">
+      </a>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $(".toggle").on("click", function () {
+          if ($(".item").hasClass("active")) {
+            $(".item").removeClass("active");
+          } else {
+            $(".item").addClass("active");
+          }
+        });
+      });
+    </script>
+
+<div class="container">
+
+<div class="heading">
+
+<h3>Photo <span>Gallery</span></h3>
+
+</div>
+
+<div class="box">
+<div class="dream">
+
+<img src="n1.jfif">
+
+<img src="w7.jpg">
+
+<img src="cl5.jfif">
+<img src="n6.jfif">
+
+</div>
+
+<div class="dream">
+
+<img src="w1.jfif">
+
+<img src="n7.jpg">
+<img src="cl2.jfif">
+
+</div>
+
+
+<div class="dream">
+
+    <img src="p1.jfif">
+    
+    <img src="n4.jfif">
+    <img src="rome.jfif">
+    
+    </div>
+
+</div>
+<div class="btn">
+    <a href="#">More</a>
+</div>
+
+
+</div>
+
+
+
+
+  
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            
+            <div class="footlinks">
+                <h4>Photopix</h4>
+               
+            </div>
+  
+            <div class="footlinks">
+                
+                <div class="social">
+                    <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>  
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        
+        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        
+        <a href="#"><ion-icon name="logo-instagram"></ion-Icon></a></li>
+            <a href="#"><ion-icon name="logo-youtube"></ion-Icon></a></li>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+  
+    <div class="end">
+        <p>Copyright © 2024 | All Rights Reserved.</p>
+    </div>
+  </section>
+  
+    </body>
+  </html>
+  
+</body></html>
